@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/styleIndex.css" />
+    <!-- this line of code needed for css styling -->
+
+
     <title>Survey Form</title>
 </head>
 <body>
     <div class = 'wrapper'>
         <form action = '/process' method = 'post'>
             First Name: <input type = 'text' name = 'firstName' placeholder=" First Name"> 
-            Last Name: <input type = 'text' name = 'lastName' placeholder=" Last Name"> 
+            <br>
+            Last Name: <input type = 'text' name = 'lastName' placeholder=" Last Name">
+            <br>
             Dojo Location: <select name = 'location'>
                 <option disabled selected value> -- select an option -- </option>
                 <option value = 'San Jose'>San Jose</option>
                 <option value = 'Seattle'>Seattle</option>
                 <option value = 'Dallas'>Dallas</option>
             </select>
-            Favorite Language:  <select name = 'language'>
+            <br>
+            Favorite Language: <select name = 'language'>
                 <option disabled selected value> -- select an option -- </option>
                 <option value = 'Python'>Python</option>
                 <option value = 'C++'>C++</option>
                 <option value = 'iOS'>iOS</option>
                 <option value = 'JavaScript'>JavaScript</option>
             </select>
-
+            <br>
             Comment(optional): <input class = 'comment' type = 'textarea' name = 'comment'>
-            <input type = 'submit' value = 'Submit'>
+            <br>
+            <input class = 'submitButton' type = 'submit' value = 'Submit'>
         </form>
 
 
