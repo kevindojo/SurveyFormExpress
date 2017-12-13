@@ -8,27 +8,25 @@
 </head>
 <body>
     <div class = 'wrapper'>
-        <form action = '/results' method = 'post'>
+        <form action = '/process' method = 'post'>
             First Name: <input type = 'text' name = 'firstName' placeholder=" First Name"> 
             Last Name: <input type = 'text' name = 'lastName' placeholder=" Last Name"> 
-            Dojo Location: <select>
+            Dojo Location: <select name = 'location'>
+                <option disabled selected value> -- select an option -- </option>
                 <option value = 'San Jose'>San Jose</option>
                 <option value = 'Seattle'>Seattle</option>
                 <option value = 'Dallas'>Dallas</option>
             </select>
-            Favorite Language:  <select>
+            Favorite Language:  <select name = 'language'>
+                <option disabled selected value> -- select an option -- </option>
                 <option value = 'Python'>Python</option>
                 <option value = 'C++'>C++</option>
                 <option value = 'iOS'>iOS</option>
                 <option value = 'JavaScript'>JavaScript</option>
             </select>
 
-            Comment(optional): <input class = 'comment' type = 'text'>
-
+            Comment(optional): <input class = 'comment' type = 'textarea' name = 'comment'>
             <input type = 'submit' value = 'Submit'>
-
-
-
         </form>
 
 
